@@ -19,3 +19,37 @@ $(function() {
     }
   });
 });
+
+//Social Colours 
+$(document).ready(function () {
+  $('#email').hover(function () {
+    $('#contact').css("background-color", "#de4438");
+  });
+  $('#email').mouseleave(function () {
+    $('#contact').css("background-color", "#2D2D2D");
+  });
+  $('#youtube').hover(function () {
+    $('#contact').css("background-color", "#e02927");
+  });
+  $('#youtube').mouseleave(function () {
+    $('#contact').css("background-color", "#2D2D2D");
+  });
+  $('#twitter').hover(function () {
+    $('#contact').css("background-color", "#4090FF");
+  });
+  $('#twitter').mouseleave(function () {
+    $('#contact').css("background-color", "#2D2D2D");
+  });
+  $('#gplus').hover(function () {
+    $('#contact').css("background-color", "#dd4b39");
+  });
+  $('#gplus').mouseleave(function () {
+    $('#contact').css("background-color", "#2D2D2D");
+  });
+  $('#linkedin').hover(function () {
+    $('#contact').css("background-color", "#4875B4");
+  });
+  $('#linkedin').mouseleave(function () {
+    $('#contact').css("background-color", "#2D2D2D");
+  });
+});
