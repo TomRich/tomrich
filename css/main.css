@@ -111,6 +111,26 @@ textarea {
    Styles
    ========================================================================== */
 
+.container {
+      -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: 0.15s ease;  
+}
+
+.container.active {
+        -webkit-transform: translate(-13.725em, 0px);
+        -moz-transform: translate(-13.725em, 0px);
+        -o-transform: translate(-13.725em, 0px);
+        -ms-transform: translate(-13.725em, 0px);
+        transform: translate(-13.725em, 0px);
+}
+
 header {
     position: relative;
     z-index: 3;
@@ -145,21 +165,41 @@ box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
     z-index: 99;
     opacity: 0.9;
     -webkit-transition: opacity 0.15s ease;
--moz-transition: opacity 0.15s ease;
--o-transition: opacity 0.15s ease;
-transition: opacity 0.15s ease;
+    -moz-transition: opacity 0.15s ease;
+    -o-transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease;
 }
 
 .menu-link:hover {
     opacity: 0.8;
 }
 
-.panel {
+#menu {
     position: fixed;
-    right: -12.725em;
-    width: 12.725em;
+    top: 0;
+    bottom: 0;
+    width: 13.755em;
+    height: 100%;
     background-color: #1a1a1a;
-    z-index: 99;
+    z-index: 999;
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: 0.15s ease;
+    right: -13.755em;
+}
+
+#menu.active {
+        -webkit-transform: translate(-13.755em, 0px);
+        -moz-transform: translate(-13.755em, 0px);
+        -o-transform: translate(-13.755em, 0px);
+        -ms-transform: translate(-13.755em, 0px);
+        transform: translate(-13.755em, 0px);
 }
 
 nav ul {
@@ -273,6 +313,7 @@ section#about {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 100px;
 }
 
 section#about p a {
@@ -280,8 +321,11 @@ section#about p a {
     font-style: italic;
 }
 
-
-
+section#contact {
+    background-color: #2D2D2D;
+    width: 100%;
+    min-height: 500px;
+}
 
 
 
