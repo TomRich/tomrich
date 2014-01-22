@@ -325,12 +325,12 @@ section#contact {
     position: relative;
     background-color: #2D2D2D;
     width: 100%;
-    min-height: 300px;
+    height: 300px;
     text-align: center;
--webkit-transition: background-color 0.3s ease-in-out;
--moz-transition: background-color 0.3s ease-in-out;
--o-transition: background-color 0.3s ease-in-out;
-transition: background-color 0.3s ease-in-out;
+-webkit-transition: background-color 0.3s ease;
+-moz-transition: background-color 0.3s ease;
+-o-transition: background-color 0.3s ease;
+transition: background-color 0.3s ease;
 }
 
 section#contact ul {
@@ -351,12 +351,12 @@ section#contact ul li {
 }
 
 .social-icons {
-    font-size: 5em;
-    color: #DBDBDB;
--webkit-transition: color 0.3s ease-in-out;
--moz-transition: color 0.3s ease-in-out;
--o-transition: color 0.3s ease-in-out;
-transition: color 0.3s ease-in-out;
+    font-size: 4.7em;
+    color: #C5C4C4;
+-webkit-transition: color 0.3s ease;
+-moz-transition: color 0.3s ease;
+-o-transition: color 0.3s ease;
+transition: color 0.3s ease;
 }
 
 .social-icons:hover {
@@ -481,6 +481,10 @@ transition: color 0.3s ease-in-out;
 
 @media screen and (max-width: 768px) {
 
+    section#hero {
+        background-position: -280px -80px;
+    }
+
     section#contact ul li {
         margin: 15px;
     }
@@ -493,23 +497,28 @@ transition: color 0.3s ease-in-out;
 @media screen and (max-width: 600px) {
 
     #hero {
-        max-height: 500px;
-        min-height: 500px !important;
+        max-height: 450px;
+        min-height: 450px !important;
     }
 
     #hero h1 {
-        font-size: 6.5rem;
+        font-size: 4.3rem;
         line-height: 0.8em;
-        padding-top: 160px;
+        padding-top: 80px;
         margin: 0 0 20px 0;
     }
 
     #hero h2 {
+        width: 90%;
         line-height: 1.2em;
     }
 
     #hero h2:before, #hero h2:after {
         display: none;
+    }
+
+    section#contact {
+        height: 220px;
     }
 
     section#contact ul li {

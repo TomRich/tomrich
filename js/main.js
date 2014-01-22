@@ -47,7 +47,7 @@ $(document).ready(function () {
     $('#contact').css("background-color", "#2D2D2D");
   });
   $('#linkedin').hover(function () {
-    $('#contact').css("background-color", "#4875B4");
+    $('#contact').css("background-color", "#3351a5");
   });
   $('#linkedin').mouseleave(function () {
     $('#contact').css("background-color", "#2D2D2D");
