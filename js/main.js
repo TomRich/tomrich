@@ -29,7 +29,7 @@ $(document).ready(function () {
     $('#contact').css("background-color", "#2D2D2D");
   });
   $('#youtube').hover(function () {
-    $('#contact').css("background-color", "#e02927");
+    $('#contact').css("background-color", "#af201e");
   });
   $('#youtube').mouseleave(function () {
     $('#contact').css("background-color", "#2D2D2D");
