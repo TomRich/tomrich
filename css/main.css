@@ -357,7 +357,7 @@ section#hero:after {
 }
 
 section#about {
-    width: 90%;
+    width: 75%;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -373,7 +373,7 @@ section#contact {
     position: relative;
     background-color: #2D2D2D;
     width: 100%;
-    height: 300px;
+    height: 150px;
     text-align: center;
 -webkit-transition: background-color 0.3s ease;
 -moz-transition: background-color 0.3s ease;
@@ -527,11 +527,14 @@ transition: color 0.3s ease;
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 1025px ) {
     section#hero {
-        background-position: -280px -80px;
+        background-size: 250%;
+        background-position: -280px -150px;
     }
+}
+
+@media screen and (max-width: 768px) {
 
     section#contact ul li {
         margin: 15px;
@@ -544,13 +547,14 @@ transition: color 0.3s ease;
 
 @media screen and (max-width: 600px) {
 
-    #hero {
+    section#hero {
         max-height: 450px;
         min-height: 450px !important;
+        background-position: -130px -60px;
     }
 
     #hero h1 {
-        font-size: 4.3rem;
+        font-size: 4.1rem;
         line-height: 0.8em;
         padding-top: 80px;
         margin: 0 0 20px 0;
@@ -565,8 +569,8 @@ transition: color 0.3s ease;
         display: none;
     }
 
-    section#contact {
-        height: 220px;
+    section#about {
+        width: 90%;
     }
 
     section#contact ul li {
