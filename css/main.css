@@ -228,10 +228,6 @@ box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
     transition: opacity 0.15s ease;
 }
 
-.menu-link:hover {
-    opacity: 0.8;
-}
-
 #menu {
     position: fixed;
     top: 0;
@@ -313,6 +309,12 @@ section#hero {
   text-align: center;
 }
 
+div.hero-text {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+}
+
 #hero h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -320,7 +322,6 @@ section#hero {
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: -5px;
     line-height: 1em;
-    padding-top: 220px;
     margin: 0 0 5px 0;
     text-transform: uppercase;
 }
@@ -548,11 +549,19 @@ transition: color 0.3s ease;
 @media screen and (max-width: 1025px ) {
     section#hero {
         background-size: 250%;
-        background-position: -280px -150px;
+        background-position: -280px -250px;
+    }
+
+    div.hero-text {
+        top: 130px;
     }
 }
 
 @media screen and (max-width: 768px) {
+
+    div.hero-text {
+        top: 200px;
+    }
 
     section#contact ul li {
         margin: 15px;
@@ -571,15 +580,19 @@ transition: color 0.3s ease;
         background-position: -130px -60px;
     }
 
+    div.hero-text {
+        top: 80px;
+    }
+
     #hero h1 {
         font-size: 4.1rem;
         line-height: 0.8em;
-        padding-top: 80px;
         margin: 0 0 20px 0;
     }
 
     #hero h2 {
         width: 90%;
+        padding: 0 5%;
         line-height: 1.2em;
     }
 

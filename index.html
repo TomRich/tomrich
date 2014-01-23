@@ -37,7 +37,7 @@
             <a id="logo" href="/"><img class="logoimg" src="img/logo.png" alt="Tom Rich logo"/></a>
         </header>
         <section id="hero">
-            <div class="hero-text" data-0="opacity:1; padding-top: 0px;" data-500="opacity:0; padding-top: 250px;">
+            <div class="hero-text" data-0="opacity:1; top: 220px;" data-500="opacity:0; top: 350px;">
                 <h1 class="">Tom Rich</h1>
                 <h2 class="">I film things, write things and edit things</h2>
                 <span><a href="#about"><i class="fa fa-chevron-down animated bounce"></i></a></span>
@@ -46,7 +46,7 @@
         <section id="about">
             <p>Welcome! My name is Tom Richardson but you've most likely come across me by my online alais: <a href="http://youtube.com/tomrich">Tom Rich</a>. I'm mainly known for being a massive technology nerd, and I run a tech-centric YouTube channel where I share my geeky opinions with the world.</p>
             <p>My main skill set lies in both videography and video editing. With that being said I also write regularly for <a href="http://redmondpie.com">Redmond Pie</a>, a leading technology news source. In addition to video production and technology journalism, I dabble in front-end web development. I'm still very much learning, but I'm getting more and more comfortable with HTML, CSS and JQuery. I sometimes write about things like this on <a href="http://blog.tomri.ch">my blog.</a></p>
-            <p>There's not a ton to read here, because I'd prefer you look at work I've done, rather than me tell you about it. Below are links to all of my social channels, including my <a href="http://youtube.com/tomrich>">YouTube channel</a>, where you can see a lot of my work. If you'd like to contact me, you can <a href="#contact">reach out</a> on one of those networks or via email. I'll reply, I promise.</p>
+            <p>There's not a ton to read here, because I'd prefer you look at work I've done, rather than me tell you about it. Below are links to all of my social channels, including my <a href="http://youtube.com/tomrich>">YouTube channel</a>, where you can see a lot of my work. If you'd like to contact me, you can reach out on one of those networks or via email. I'll reply, I promise.</p>
         </section>
         <section id="contact">
             <ul>
@@ -67,7 +67,8 @@
             $('.logoimg').on('dragstart', function(event) { event.preventDefault(); });
         </script>
         <script type="text/javascript">
-            if (Modernizr.touch) {   
+            if (Modernizr.touch) {
+                skrollr.init().destroy();
             } else {   
                 var s=skrollr.init();  
             }  
