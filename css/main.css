@@ -309,6 +309,20 @@ section#hero {
   text-align: center;
 }
 
+div#hero-blurred {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background: url('../img/hero-image-blurred.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 650px;
+}
+
 div.hero-text {
     position: absolute;
     top: 220px;
@@ -550,6 +564,10 @@ transition: color 0.3s ease;
     section#hero {
         background-size: 250%;
         background-position: -280px -250px;
+    }
+
+    div#hero-blurred {
+        display: none;
     }
 
     div.hero-text {
