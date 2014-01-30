@@ -34,9 +34,10 @@ a:hover {
 }
 
 p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 1.45em;
+    font-family: "freight-text-pro",sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: .02rem;
     line-height: 1.65em;
     color: #343434;
 }
@@ -330,7 +331,7 @@ div.hero-text {
 }
 
 #hero h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "ff-dagny-web-pro", sans-serif;
     font-weight: 700;
     font-size: 7.5rem;
     color: rgba(255, 255, 255, 0.9);
@@ -342,7 +343,8 @@ div.hero-text {
 
 #hero h2 {
     display: inline-block;
-    font-family: 'Droid serif', serif;
+    font-family: "utopia-std-display", serif;
+    font-size: 1.65em;
     font-style: italic;
     font-weight: 400;
     text-align: center;
