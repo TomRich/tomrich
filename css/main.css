@@ -381,22 +381,12 @@ div.hero-text {
     opacity: 0.5;
 }
 
-section#hero:after {
-    display: block;
-    content: "";
-    background: url('../img/bottomfade.png') repeat-x;
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    bottom: 0;
-}
-
 section#about {
     width: 75%;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 section#about p a {
